@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Shantell+Sans:wght,BNCE,INFM@500..800,-100..100,0..100&display=swap">
   <link rel="preload" as="image" href="assets/recortes/triceratops.webp" imagesrcset="assets/recortes/sm/triceratops.webp 480w, assets/recortes/triceratops.webp 1000w" imagesizes="(min-width: 800px) 40vw, 70vw">
-  <link rel="stylesheet" href="styles.css?v=1">
+  <link rel="stylesheet" href="styles.css?v=2">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,6 +44,29 @@
 </head>
 <body>
   <a class="skip" href="#yos">Saltar al contenido</a>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3.5 20.5l1.4-4.2A8.5 8.5 0 1 1 20.5 11.6z"/></symbol>
+  </svg>
+
+  <nav class="bar" data-bar aria-label="Principal">
+    <a class="bar__mark" href="#inicio" aria-label="Mocka Pastelería, inicio">
+      <svg class="logo" viewBox="0 0 1086 400" aria-hidden="true">
+        <path class="l l-m" d="M46 272 C 62 214, 84 128, 104 88 C 114 66, 130 70, 136 96 C 143 128, 150 160, 160 178 C 176 142, 196 92, 214 64 C 226 46, 244 52, 246 82 C 250 160, 250 270, 251 352"/>
+        <path class="l l-o" d="M381 108 a54 54 0 1 0 0.01 0"/>
+        <path class="l l-c" d="M614 101 A 72 72 0 1 0 626 236"/>
+        <path class="l l-k" d="M700 72 L 700 238 M 712 168 L 882 46 M 734 176 L 940 352"/>
+        <path class="l l-a" d="M1020 166 a62 62 0 1 0 0 0.01 M1046 100 L1046 240"/>
+      </svg>
+    </a>
+    <ul class="bar__links">
+      <li><a href="#triceratops" data-spy style="--dot:var(--m)">Tortas 3D</a></li>
+      <li><a href="#galeria" data-spy style="--dot:var(--o)">Galería</a></li>
+      <li><a href="#como" data-spy style="--dot:var(--c)">Cómo se hace</a></li>
+      <li><a href="#carta" data-spy style="--dot:var(--k)">La carta</a></li>
+      <li><a href="#preguntas" data-spy style="--dot:var(--a)">Preguntas</a></li>
+    </ul>
+    <a class="bar__cta" href="https://wa.me/573006080239?text=Hola%20Mocka%2C%20quiero%20cotizar%20una%20torta." data-wa><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Cotizar</a>
+  </nav>
 
   <header class="hero" id="inicio">
     <div class="top">
@@ -72,7 +95,7 @@
       <div class="folder folder--a folder--front" style="--n:4">
         <a class="folder__tab" href="#yos" data-preview="emma">Yos Art</a>
         <div class="front__row">
-          <a class="button" href="https://wa.me/573006080239?text=Hola%20Mocka%2C%20quiero%20cotizar%20una%20torta." data-wa>Cotizar por WhatsApp</a>
+          <a class="button" href="https://wa.me/573006080239?text=Hola%20Mocka%2C%20quiero%20cotizar%20una%20torta." data-wa><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Cotizar por WhatsApp</a>
           <p class="front__note">Pedidos con anticipación, en Bogotá</p>
         </div>
       </div>
@@ -96,11 +119,11 @@
             <span class="nw">catrinas <span class="pip"><img src="assets/fotos/sm/catrina-frente.webp" alt="" width="640" height="763" loading="lazy" style="object-position:50% 12%"></span>,</span>
             <span class="nw">zombis <span class="pip pip--wide"><img src="assets/fotos/sm/zombie-ojo.webp" alt="" width="640" height="752" loading="lazy" style="object-position:50% 30%"></span></span>
             <span class="nw">y retratos <span class="pip pip--wide"><img src="assets/fotos/sm/emma-detalle.webp" alt="" width="640" height="746" loading="lazy" style="object-position:60% 30%"></span></span> que se comen.</p>
-          <ul class="yos__facts" data-reveal style="--r:2">
-            <li>Torta hecha desde cero, sin premezclas</li>
-            <li>Con mantequilla y sabores que no empalagan</li>
-            <li>Figuras modeladas en 3D comestible</li>
-          </ul>
+          <dl class="yos__stats" data-reveal style="--r:2">
+            <div><dt>años esculpiendo tortas</dt><dd>+11</dd></div>
+            <div><dt>seguidores en Instagram</dt><dd>+15 mil</dd></div>
+            <div><dt>premezclas: todo desde cero</dt><dd>0</dd></div>
+          </dl>
         </div>
         <figure class="yos__pic" data-reveal style="--r:2">
           <div class="capsule yos__frame"><img class="drift" src="assets/fotos/zombie-mano.webp" srcset="assets/fotos/sm/zombie-mano.webp 640w, assets/fotos/zombie-mano.webp 1200w" sizes="(min-width: 800px) 28vw, 80vw" width="1200" height="1412" alt="Mano de zombi modelada en azúcar saliendo de la tierra de chocolate sobre una torta" loading="lazy"></div>
@@ -131,7 +154,7 @@
           </dl>
         </div>
         <div class="show__cells" data-reveal style="--r:3">
-          <a class="button button--ink" href="https://wa.me/573006080239?text=Hola%20Mocka%2C%20vi%20el%20triceratops%20y%20quiero%20una%20torta%20esculpida%20as%C3%AD." data-wa>Quiero una así</a>
+          <a class="button button--ink" href="https://wa.me/573006080239?text=Hola%20Mocka%2C%20vi%20el%20triceratops%20y%20quiero%20una%20torta%20esculpida%20as%C3%AD." data-wa><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Quiero una así</a>
           <a class="button button--tone" href="#galeria">Ver más tortas</a>
         </div>
       </div>
@@ -320,10 +343,12 @@
               <input id="fecha" name="fecha" type="date">
             </div>
             <input type="hidden" name="text" value="Hola Mocka, quiero cotizar una torta.">
-            <button class="button button--ink" type="submit">Pedir por WhatsApp</button>
+            <button class="button button--ink" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Pedir por WhatsApp</button>
           </form>
         </div>
-        <div class="order__flank order__flank--m"></div>
+        <figure class="order__flank order__flank--m">
+          <img src="assets/recortes/sm/cakepops.webp" width="480" height="505" alt="Cake pops con lazos de cinta y hojas de fondant" loading="lazy">
+        </figure>
       </div>
     </section>
   </main>
@@ -358,6 +383,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=1" defer></script>
+  <script src="app.js?v=2" defer></script>
 </body>
 </html>
